@@ -1,0 +1,79 @@
+[
+  {
+    "label": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+    "input": {
+      "sexo": "M",
+      "idade": 40,
+      "peso": 80,
+      "altura": 180,
+      "pal": "1.76"
+    },
+    "expected": {
+      "raw": {
+        "mifflin": 1730,
+        "hb": 1796.86,
+        "tee": 3044.8
+      },
+      "main": "1.730",
+      "level": "info"
+    },
+    "originalInput": {
+      "sexo": "M",
+      "idade": 40,
+      "peso": 80,
+      "altura": 180,
+      "pal": "1.76"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+    "input": {
+      "sexo": "F",
+      "idade": 30,
+      "peso": 60,
+      "altura": 165,
+      "pal": "1.53"
+    },
+    "expected": {
+      "raw": {
+        "mifflin": 1320.25,
+        "hb": 1383.68,
+        "tee": 2019.98
+      },
+      "main": "1.320"
+    },
+    "originalInput": {
+      "sexo": "F",
+      "idade": 30,
+      "peso": 60,
+      "altura": 165,
+      "pal": "1.53"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+    "input": {
+      "sexo": "M",
+      "idade": 70,
+      "peso": 100,
+      "altura": 170,
+      "pal": "2.25"
+    },
+    "expected": {
+      "raw": {
+        "mifflin": 1717.5,
+        "tee": 3864.375
+      }
+    },
+    "originalInput": {
+      "sexo": "M",
+      "idade": 70,
+      "peso": 100,
+      "altura": 170,
+      "pal": "2.25"
+    },
+    "expandedZeroOptions": []
+  }
+]

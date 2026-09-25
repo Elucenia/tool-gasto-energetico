@@ -1,0 +1,207 @@
+{
+  "tool": {
+    "id": "gasto-energetico",
+    "title": "Gasto energético (Mifflin-St Jeor e Harris-Benedict)",
+    "short": "Gasto de repouso e gasto total com nível de atividade",
+    "desc": "Estime o gasto energético de repouso pelas equações de Mifflin-St Jeor e Harris-Benedict revisada e o gasto total pelo nível de atividade física (PAL).",
+    "lead": "Estima o gasto energético de repouso de adultos saudáveis e o gasto total diário a partir do nível de atividade física, para planejar a prescrição dietética.",
+    "spec": [
+      "nutrologia",
+      "endocrinologia-e-metabologia",
+      "clinica-medica",
+      "medicina-esportiva"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 18,
+          "max": 100,
+          "step": 1,
+          "unit": "anos",
+          "ph": "40"
+        }
+      ],
+      [
+        "peso",
+        "Peso",
+        "num",
+        {
+          "min": 30,
+          "max": 300,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "70"
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 120,
+          "max": 230,
+          "step": 0.5,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ],
+      [
+        "pal",
+        "Nível de atividade física (PAL)",
+        "sel",
+        {
+          "opts": {
+            "1.53": "Sedentário ou leve (PAL 1,53)",
+            "1.76": "Ativo ou moderado (PAL 1,76)",
+            "2.25": "Vigoroso (PAL 2,25)"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>Mifflin-St Jeor:</strong> 10 × peso (kg) + 6,25 × altura (cm) − 5 × idade + 5 (homens) ou − 161 (mulheres).</p><p><strong>Harris-Benedict revisada (Roza e Shizgal, 1984):</strong> homens 88,362 + 13,397 × peso + 4,799 × altura − 5,677 × idade; mulheres 447,593 + 9,247 × peso + 3,098 × altura − 4,330 × idade.</p><p><strong>Gasto total</strong> = gasto de repouso × PAL (FAO/OMS/UNU 2004: sedentário 1,40 a 1,69; ativo 1,70 a 1,99; vigoroso 2,00 a 2,40).</p>",
+    "table": [
+      [
+        "Estilo de vida",
+        "PAL (FAO/OMS/UNU)",
+        "Exemplo"
+      ],
+      [
+        "Sedentário ou leve",
+        "1,40 a 1,69 (1,53)",
+        "Trabalho sentado, deslocamento motorizado, pouca atividade no lazer"
+      ],
+      [
+        "Ativo ou moderado",
+        "1,70 a 1,99 (1,76)",
+        "Trabalho em pé ou 1 hora diária de atividade moderada"
+      ],
+      [
+        "Vigoroso",
+        "2,00 a 2,40 (2,25)",
+        "Trabalho braçal pesado ou treino intenso diário"
+      ]
+    ],
+    "tips": [
+      "Mifflin-St Jeor foi a equação mais precisa em adultos saudáveis, com e sem obesidade, em revisões sistemáticas; mesmo assim, o erro individual pode passar de 10%: ajuste a prescrição pela evolução do peso.",
+      "Em pacientes internados ou críticos, estas equações não consideram o estresse metabólico: prefira calorimetria indireta ou as metas das diretrizes (por exemplo, 20 a 25 kcal/kg/dia na fase aguda).",
+      "Para perda de peso, um déficit de 500 a 750 kcal/dia sobre o gasto total costuma ser o ponto de partida.",
+      "Em obesidade grave, use o peso real nas equações de Mifflin (foram validadas assim); não substitua por peso ideal."
+    ],
+    "sources": [
+      [
+        "Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990.",
+        "https://doi.org/10.1093/ajcn/51.2.241"
+      ],
+      [
+        "Roza AM, Shizgal HM. The Harris Benedict equation reevaluated: resting energy requirements and the body cell mass. Am J Clin Nutr, 1984.",
+        "https://doi.org/10.1093/ajcn/40.1.168"
+      ],
+      [
+        "FAO/WHO/UNU. Human energy requirements: report of a Joint FAO/WHO/UNU Expert Consultation. Roma, 2004.",
+        "https://www.fao.org/4/y5686e/y5686e00.htm"
+      ]
+    ],
+    "cases": [
+      [
+        "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        {
+          "sexo": "M",
+          "idade": 40,
+          "peso": 80,
+          "altura": 180,
+          "pal": "1.76"
+        },
+        {
+          "raw": {
+            "mifflin": 1730,
+            "hb": 1796.86,
+            "tee": 3044.8
+          },
+          "main": "1.730",
+          "level": "info"
+        }
+      ],
+      [
+        "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        {
+          "sexo": "F",
+          "idade": 30,
+          "peso": 60,
+          "altura": 165,
+          "pal": "1.53"
+        },
+        {
+          "raw": {
+            "mifflin": 1320.25,
+            "hb": 1383.68,
+            "tee": 2019.98
+          },
+          "main": "1.320"
+        }
+      ],
+      [
+        "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        {
+          "sexo": "M",
+          "idade": 70,
+          "peso": 100,
+          "altura": 170,
+          "pal": "2.25"
+        },
+        {
+          "raw": {
+            "mifflin": 1717.5,
+            "tee": 3864.375
+          }
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
