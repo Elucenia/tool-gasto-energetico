@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-gasto-energetico",
   "version": "0.1.0",
-  "description": "Gasto energético (Mifflin-St Jeor e Harris-Benedict) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Gasto energético (Mifflin-St Jeor e Harris-Benedict) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",

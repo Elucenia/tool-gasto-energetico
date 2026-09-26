@@ -1,11 +1,11 @@
-/* tool-gasto-energetico · Elucenia · https://github.com/Elucenia/tool-gasto-energetico
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-gasto-energetico · ELUCENIA · https://github.com/Elucenia/tool-gasto-energetico
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"gasto-energetico","title":"Gasto energético (Mifflin-St Jeor e Harris-Benedict)","fields":[["sexo","Sexo","radio",{"opts":{"F":"Feminino","M":"Masculino"}}],["idade","Idade","num",{"min":18,"max":100,"step":1,"unit":"anos","ph":"40"}],["peso","Peso","num",{"min":30,"max":300,"step":0.1,"unit":"kg","ph":"70"}],["altura","Altura","num",{"min":120,"max":230,"step":0.5,"unit":"cm","ph":"170"}],["pal","Nível de atividade física (PAL)","sel",{"opts":{"1.53":"Sedentário ou leve (PAL 1,53)","1.76":"Ativo ou moderado (PAL 1,76)","2.25":"Vigoroso (PAL 2,25)"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
