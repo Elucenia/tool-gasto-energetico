@@ -5,13 +5,13 @@
     "short": "Gasto de repouso e gasto total com nível de atividade",
     "desc": "Estime o gasto energético de repouso pelas equações de Mifflin-St Jeor e Harris-Benedict revisada e o gasto total pelo nível de atividade física (PAL).",
     "lead": "Estima o gasto energético de repouso de adultos saudáveis e o gasto total diário a partir do nível de atividade física, para planejar a prescrição dietética.",
+    "kind": "Calculadora",
     "spec": [
       "nutrologia",
       "endocrinologia-e-metabologia",
       "clinica-medica",
       "medicina-esportiva"
     ],
-    "tier": 1,
     "fields": [
       [
         "sexo",
@@ -74,34 +74,6 @@
       ]
     ],
     "formula": "<p><strong>Mifflin-St Jeor:</strong> 10 × peso (kg) + 6,25 × altura (cm) − 5 × idade + 5 (homens) ou − 161 (mulheres).</p><p><strong>Harris-Benedict revisada (Roza e Shizgal, 1984):</strong> homens 88,362 + 13,397 × peso + 4,799 × altura − 5,677 × idade; mulheres 447,593 + 9,247 × peso + 3,098 × altura − 4,330 × idade.</p><p><strong>Gasto total</strong> = gasto de repouso × PAL (FAO/OMS/UNU 2004: sedentário 1,40 a 1,69; ativo 1,70 a 1,99; vigoroso 2,00 a 2,40).</p>",
-    "table": [
-      [
-        "Estilo de vida",
-        "PAL (FAO/OMS/UNU)",
-        "Exemplo"
-      ],
-      [
-        "Sedentário ou leve",
-        "1,40 a 1,69 (1,53)",
-        "Trabalho sentado, deslocamento motorizado, pouca atividade no lazer"
-      ],
-      [
-        "Ativo ou moderado",
-        "1,70 a 1,99 (1,76)",
-        "Trabalho em pé ou 1 hora diária de atividade moderada"
-      ],
-      [
-        "Vigoroso",
-        "2,00 a 2,40 (2,25)",
-        "Trabalho braçal pesado ou treino intenso diário"
-      ]
-    ],
-    "tips": [
-      "Mifflin-St Jeor foi a equação mais precisa em adultos saudáveis, com e sem obesidade, em revisões sistemáticas; mesmo assim, o erro individual pode passar de 10%: ajuste a prescrição pela evolução do peso.",
-      "Em pacientes internados ou críticos, estas equações não consideram o estresse metabólico: prefira calorimetria indireta ou as metas das diretrizes (por exemplo, 20 a 25 kcal/kg/dia na fase aguda).",
-      "Para perda de peso, um déficit de 500 a 750 kcal/dia sobre o gasto total costuma ser o ponto de partida.",
-      "Em obesidade grave, use o peso real nas equações de Mifflin (foram validadas assim); não substitua por peso ideal."
-    ],
     "sources": [
       [
         "Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990.",
@@ -171,9 +143,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -182,17 +151,215 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:19:19.748Z",
+      "total": 750,
+      "passed": 750,
+      "evidencePath": "reports/review-20261003/four-physiological-equation-source-oracles-final23-v2.json",
+      "evidenceSha256": "519318646a8992c38bc190eab888a1a985682928e8dd2f833d6566be5e490b68",
+      "peerEvidencePath": "reports/review-20261003/independent-four-physiological-equation-source-oracles-final23-v2.json",
+      "peerEvidenceSha256": "59b71a2c62afcb302b5af74ea6bcd987dc816ed6b204fba5ecf377dd776f9fc2",
+      "scope": "Only explicitly listed physical/linear equation outputs. Other equations,protocols,thresholds,clinical interpretation,population suitability,professional translations and source rights are not approved.",
+      "source": {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2305711/?format=pubmed",
+        "edition": "Mifflin/StJeor1990,DOI10.1093/ajcn/51.2.241,simplified sex-specific equations",
+        "locator": "Original indexed Abstract:498 healthy participants19–78y;simplified equations",
+        "access": "Original author abstract retrieved through indexed PubMed text2026-10-04; focused direct reads returned only footer, explicitly not fullpaper. Published male10kg+6.25cm-5years+5 andfemale-161 are read exactly.",
+        "limitations": "Only simplifiedMifflin REE is checked,not HarrisBenedict/Roza formula, activityPAL calibration,TDEE,measured metabolism,nutritional prescription or extrapolation outside original healthy19–78y population."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "gasto-energetico",
+          "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+        },
+        {
+          "app": "dashboard",
+          "id": "gasto-energetico",
+          "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+        },
+        {
+          "app": "command-center",
+          "id": "gasto-energetico",
+          "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+        }
+      ],
+      "qualifications": [
+        "Only simplifiedMifflin REE is checked,not HarrisBenedict/Roza formula, activityPAL calibration,TDEE,measured metabolism,nutritional prescription or extrapolation outside original healthy19–78y population."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Mifflin St Jeor 1990 e Harris Benedictrevisada Roza Shizgal 1984; PALFAOWHOUNU 2004",
+    "implementationVersion": "gasto-energetico@native-2026-10-03+c09eea23801c",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Mifflin-St Jeor: 10 × peso (kg) + 6,25 × altura (cm) − 5 × idade + 5 (homens) ou − 161 (mulheres). Harris-Benedict revisada (Roza e Shizgal, 1984): homens 88,362 + 13,397 × peso + 4,799 × altura − 5,677 × idade; mulheres 447,593 + 9,247 × peso + 3,098 × altura − 4,330 × idade. Gasto total = gasto de repouso × PAL (FAO/OMS/UNU 2004: sedentário 1,40 a 1,69; ativo 1,70 a 1,99; vigoroso 2,00 a 2,40).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "num",
+            "min": 18,
+            "max": 100,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 30,
+            "max": 300,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 120,
+            "max": 230,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pal",
+            "label": "Nível de atividade física (PAL)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "1.53": "Sedentário ou leve (PAL 1,53)",
+              "1.76": "Ativo ou moderado (PAL 1,76)",
+              "2.25": "Vigoroso (PAL 2,25)"
+            }
+          }
+        ],
+        "hash": "24dbaba69f6e82e57888b4cf84e4616742121bf0126042f56ae00894eaf01079"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990.",
+          "url": "https://doi.org/10.1093/ajcn/51.2.241",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A new predictive equation for resting energy expenditure in healthy individuals.",
+            "year": "1990",
+            "firstPublicationDate": "1990-02-01",
+            "doi": "10.1093/ajcn/51.2.241",
+            "pmid": "2305711",
+            "journal": "The American journal of clinical nutrition",
+            "authors": "Mifflin MD, St Jeor ST, Hill LA, Scott BJ, Daugherty SA, Koh YO."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "40945a2b88ec7949f7b1ad01ff421252f137e94d6bf7d6afab2f89e4c06acc4c",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Roza AM, Shizgal HM. The Harris Benedict equation reevaluated: resting energy requirements and the body cell mass. Am J Clin Nutr, 1984.",
+          "url": "https://doi.org/10.1093/ajcn/40.1.168",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Harris Benedict equation reevaluated: resting energy requirements and the body cell mass.",
+            "year": "1984",
+            "firstPublicationDate": "1984-07-01",
+            "doi": "10.1093/ajcn/40.1.168",
+            "pmid": "6741850",
+            "journal": "The American journal of clinical nutrition",
+            "authors": "Roza AM, Shizgal HM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/6741850/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "4c77b19ff0cdf9c732458a74ed53781eccfc1d0f0e6217f50debd5324559de21",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "FAO/WHO/UNU. Human energy requirements: report of a Joint FAO/WHO/UNU Expert Consultation. Roma, 2004.",
+          "url": "https://www.fao.org/4/y5686e/y5686e00.htm",
+          "class": "primary-report-index-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "FAO/WHO/UNU Human Energy Requirements, 2004; expert consultation report."
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:19:19.748Z",
+        "total": 750,
+        "passed": 750,
+        "evidencePath": "reports/review-20261003/four-physiological-equation-source-oracles-final23-v2.json",
+        "scope": "Only explicitly listed physical/linear equation outputs. Other equations,protocols,thresholds,clinical interpretation,population suitability,professional translations and source rights are not approved.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "49120a6d6e136596b151dc365f835e03daa6f1fb3418a5d9d04a881405432558"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+    },
+    "limits": "A equação de Mifflin foi derivada em adultos saudáveis de 19–78 anos, com peso normal e obesidade, utilizando peso em kg, altura em cm e idade em anos. Não equivale a calorimetria individual nem comprova adequação em crianças, gestação ou doença crítica. As outras equações e fatores de atividade devem seguir suas próprias fontes e populações.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.985Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Harris–Benedict revisada e fatores de atividade FAO são fontes distintas ainda não lidas. Coorte não confirma pediatria, gestação ou doença crítica."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gasto-energetico/calculator.js",
+    "bytes": 5356,
+    "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "415cf00c78a06f959c72dd3b4ff1d9e4e9ca091510448ed0d2187a84197a88f7",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 750,
+      "sha256": "291c48c01d58933e9c51c7bb4be11c9f737103fd1d34d5d7f9edcc6f1b40f529",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,6 +1,16 @@
 [
   {
-    "label": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+    "id": "gasto-energetico",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+    "originalInput": {
+      "sexo": "M",
+      "idade": 40,
+      "peso": 80,
+      "altura": 180,
+      "pal": "1.76"
+    },
     "input": {
       "sexo": "M",
       "idade": 40,
@@ -17,17 +27,39 @@
       "main": "1.730",
       "level": "info"
     },
-    "originalInput": {
-      "sexo": "M",
-      "idade": 40,
-      "peso": 80,
-      "altura": 180,
-      "pal": "1.76"
+    "recordedResult": {
+      "main": [
+        "1.730",
+        "kcal/dia"
+      ],
+      "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+      "raw": {
+        "mifflin": 1730,
+        "hb": 1796.862,
+        "tee": 3044.8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+    "id": "gasto-energetico",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+    "originalInput": {
+      "sexo": "F",
+      "idade": 30,
+      "peso": 60,
+      "altura": 165,
+      "pal": "1.53"
+    },
     "input": {
       "sexo": "F",
       "idade": 30,
@@ -43,17 +75,39 @@
       },
       "main": "1.320"
     },
-    "originalInput": {
-      "sexo": "F",
-      "idade": 30,
-      "peso": 60,
-      "altura": 165,
-      "pal": "1.53"
+    "recordedResult": {
+      "main": [
+        "1.320",
+        "kcal/dia"
+      ],
+      "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+      "raw": {
+        "mifflin": 1320.25,
+        "hb": 1383.683,
+        "tee": 2019.9825
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+    "id": "gasto-energetico",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+    "originalInput": {
+      "sexo": "M",
+      "idade": 70,
+      "peso": 100,
+      "altura": 170,
+      "pal": "2.25"
+    },
     "input": {
       "sexo": "M",
       "idade": 70,
@@ -67,13 +121,25 @@
         "tee": 3864.375
       }
     },
-    "originalInput": {
-      "sexo": "M",
-      "idade": 70,
-      "peso": 100,
-      "altura": 170,
-      "pal": "2.25"
+    "recordedResult": {
+      "main": [
+        "1.718",
+        "kcal/dia"
+      ],
+      "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+      "raw": {
+        "mifflin": 1717.5,
+        "hb": 1846.5020000000004,
+        "tee": 3864.375
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
