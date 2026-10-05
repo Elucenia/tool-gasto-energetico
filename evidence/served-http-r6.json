@@ -1,0 +1,770 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "gasto-energetico",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/gasto-energetico/calculator.js",
+    "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91",
+    "bytes": 5356
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "gasto-energetico",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+      "originalInput": {
+        "sexo": "M",
+        "idade": 40,
+        "peso": 80,
+        "altura": 180,
+        "pal": "1.76"
+      },
+      "input": {
+        "sexo": "M",
+        "idade": 40,
+        "peso": 80,
+        "altura": 180,
+        "pal": "1.76"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mifflin": 1730,
+          "hb": 1796.86,
+          "tee": 3044.8
+        },
+        "main": "1.730",
+        "level": "info"
+      },
+      "recordedResult": {
+        "main": [
+          "1.730",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1730,
+          "hb": 1796.862,
+          "tee": 3044.8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "idade": 40,
+            "peso": 80,
+            "altura": 180,
+            "pal": "1.76"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+          "startedAt": "2026-10-05T17:38:14.011Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasto-energetico",
+              "main": [
+                "1.730",
+                "kcal/dia"
+              ],
+              "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+              "raw": {
+                "mifflin": 1730,
+                "hb": 1796.862,
+                "tee": 3044.8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1eff24d2548995e36aef410672481fcca65f84ef5e384af9729a52c4f088cb56",
+          "bytes": 208,
+          "elapsedMs": 4.503599999996368
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "startedAt": "2026-10-05T17:38:14.011Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasto-energetico",
+            "main": [
+              "1.730",
+              "kcal/dia"
+            ],
+            "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+            "raw": {
+              "mifflin": 1730,
+              "hb": 1796.862,
+              "tee": 3044.8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1eff24d2548995e36aef410672481fcca65f84ef5e384af9729a52c4f088cb56",
+        "bytes": 208,
+        "elapsedMs": 4.503599999996368
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "1.730",
+            "obtained": "1.730",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mifflin",
+            "expected": 1730,
+            "obtained": 1730,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.hb",
+            "expected": 1796.86,
+            "obtained": 1796.862,
+            "tolerance": 0.00500001,
+            "difference": 0.00200000000018008,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tee",
+            "expected": 3044.8,
+            "obtained": 3044.8,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mifflin",
+            "expected": 1730,
+            "obtained": 1730,
+            "tolerance": 1.73e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.hb",
+            "expected": 1796.862,
+            "obtained": 1796.862,
+            "tolerance": 1.796862e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tee",
+            "expected": 3044.8,
+            "obtained": 3044.8,
+            "tolerance": 3.0448e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1.730",
+            "obtained": "1.730",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kcal/dia",
+            "obtained": "kcal/dia",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasto-energetico",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+      "originalInput": {
+        "sexo": "F",
+        "idade": 30,
+        "peso": 60,
+        "altura": 165,
+        "pal": "1.53"
+      },
+      "input": {
+        "sexo": "F",
+        "idade": 30,
+        "peso": 60,
+        "altura": 165,
+        "pal": "1.53"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mifflin": 1320.25,
+          "hb": 1383.68,
+          "tee": 2019.98
+        },
+        "main": "1.320"
+      },
+      "recordedResult": {
+        "main": [
+          "1.320",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1320.25,
+          "hb": 1383.683,
+          "tee": 2019.9825
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "idade": 30,
+            "peso": 60,
+            "altura": 165,
+            "pal": "1.53"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+          "startedAt": "2026-10-05T17:38:14.323Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasto-energetico",
+              "main": [
+                "1.320",
+                "kcal/dia"
+              ],
+              "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+              "raw": {
+                "mifflin": 1320.25,
+                "hb": 1383.683,
+                "tee": 2019.9825
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "02ea9c1e534686845175ed7a4392f7f0651dec4268228900c1da6704810c5652",
+          "bytes": 214,
+          "elapsedMs": 6.801999999996042
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "startedAt": "2026-10-05T17:38:14.323Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasto-energetico",
+            "main": [
+              "1.320",
+              "kcal/dia"
+            ],
+            "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+            "raw": {
+              "mifflin": 1320.25,
+              "hb": 1383.683,
+              "tee": 2019.9825
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "02ea9c1e534686845175ed7a4392f7f0651dec4268228900c1da6704810c5652",
+        "bytes": 214,
+        "elapsedMs": 6.801999999996042
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "1.320",
+            "obtained": "1.320",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mifflin",
+            "expected": 1320.25,
+            "obtained": 1320.25,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.hb",
+            "expected": 1383.68,
+            "obtained": 1383.683,
+            "tolerance": 0.00500001,
+            "difference": 0.0029999999999290594,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tee",
+            "expected": 2019.98,
+            "obtained": 2019.9825,
+            "tolerance": 0.00500001,
+            "difference": 0.0025000000000545697,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mifflin",
+            "expected": 1320.25,
+            "obtained": 1320.25,
+            "tolerance": 1.32025e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.hb",
+            "expected": 1383.683,
+            "obtained": 1383.683,
+            "tolerance": 1.383683e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tee",
+            "expected": 2019.9825,
+            "obtained": 2019.9825,
+            "tolerance": 2.0199825e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1.320",
+            "obtained": "1.320",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kcal/dia",
+            "obtained": "kcal/dia",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gasto-energetico",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+      "originalInput": {
+        "sexo": "M",
+        "idade": 70,
+        "peso": 100,
+        "altura": 170,
+        "pal": "2.25"
+      },
+      "input": {
+        "sexo": "M",
+        "idade": 70,
+        "peso": 100,
+        "altura": 170,
+        "pal": "2.25"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "mifflin": 1717.5,
+          "tee": 3864.375
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "1.718",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1717.5,
+          "hb": 1846.5020000000004,
+          "tee": 3864.375
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "idade": 70,
+            "peso": 100,
+            "altura": 170,
+            "pal": "2.25"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+          "startedAt": "2026-10-05T17:38:14.633Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gasto-energetico",
+              "main": [
+                "1.718",
+                "kcal/dia"
+              ],
+              "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+              "raw": {
+                "mifflin": 1717.5,
+                "hb": 1846.5020000000004,
+                "tee": 3864.375
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "125da3b3d866e78566cd0f0aaac933f7310ecd9ede0eb71ef74132c8d182e50b",
+          "bytes": 222,
+          "elapsedMs": 6.369899999990594
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gasto-energetico/calculate",
+        "startedAt": "2026-10-05T17:38:14.633Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gasto-energetico",
+            "main": [
+              "1.718",
+              "kcal/dia"
+            ],
+            "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+            "raw": {
+              "mifflin": 1717.5,
+              "hb": 1846.5020000000004,
+              "tee": 3864.375
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "125da3b3d866e78566cd0f0aaac933f7310ecd9ede0eb71ef74132c8d182e50b",
+        "bytes": 222,
+        "elapsedMs": 6.369899999990594
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.mifflin",
+            "expected": 1717.5,
+            "obtained": 1717.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tee",
+            "expected": 3864.375,
+            "obtained": 3864.375,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mifflin",
+            "expected": 1717.5,
+            "obtained": 1717.5,
+            "tolerance": 1.7175e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.hb",
+            "expected": 1846.5020000000004,
+            "obtained": 1846.5020000000004,
+            "tolerance": 1.8465020000000004e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tee",
+            "expected": 3864.375,
+            "obtained": 3864.375,
+            "tolerance": 3.864375e-9,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1.718",
+            "obtained": "1.718",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kcal/dia",
+            "obtained": "kcal/dia",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
