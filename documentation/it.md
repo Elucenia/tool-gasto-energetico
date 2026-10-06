@@ -92,3 +92,46 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Dispendio totale stimato: 3045 kcal/die (PAL 1,76)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Harris-Benedict rivista (riposo) | 1797 kcal/die |
+| Harris-Benedict × PAL | 3162 kcal/die |
+| Mifflin-St Jeor × PAL | 3045 kcal/die |
+
+Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.
+
+
+### 2
+
+Dispendio totale stimato: 2020 kcal/die (PAL 1,53)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Harris-Benedict rivista (riposo) | 1384 kcal/die |
+| Harris-Benedict × PAL | 2117 kcal/die |
+| Mifflin-St Jeor × PAL | 2020 kcal/die |
+
+Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.
+
+
+### 3
+
+Dispendio totale stimato: 3864 kcal/die (PAL 2,25)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Harris-Benedict rivista (riposo) | 1847 kcal/die |
+| Harris-Benedict × PAL | 4155 kcal/die |
+| Mifflin-St Jeor × PAL | 3864 kcal/die |
+
+Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.
+

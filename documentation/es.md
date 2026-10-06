@@ -92,3 +92,46 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Gasto total estimado: 3045 kcal/día (PAL 1,76)
+
+| Detalles del resultado | |
+| --- | --- |
+| Harris-Benedict revisada (reposo) | 1797 kcal/día |
+| Harris-Benedict × PAL | 3162 kcal/día |
+| Mifflin-St Jeor × PAL | 3045 kcal/día |
+
+Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.
+
+
+### 2
+
+Gasto total estimado: 2020 kcal/día (PAL 1,53)
+
+| Detalles del resultado | |
+| --- | --- |
+| Harris-Benedict revisada (reposo) | 1384 kcal/día |
+| Harris-Benedict × PAL | 2117 kcal/día |
+| Mifflin-St Jeor × PAL | 2020 kcal/día |
+
+Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.
+
+
+### 3
+
+Gasto total estimado: 3864 kcal/día (PAL 2,25)
+
+| Detalles del resultado | |
+| --- | --- |
+| Harris-Benedict revisada (reposo) | 1847 kcal/día |
+| Harris-Benedict × PAL | 4155 kcal/día |
+| Mifflin-St Jeor × PAL | 3864 kcal/día |
+
+Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.
+

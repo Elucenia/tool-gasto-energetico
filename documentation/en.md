@@ -92,3 +92,46 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Estimated total expenditure: 3045 kcal/day (PAL 1.76)
+
+| Result details | |
+| --- | --- |
+| Revised Harris-Benedict (resting) | 1797 kcal/day |
+| Harris-Benedict × PAL | 3162 kcal/day |
+| Mifflin-St Jeor × PAL | 3045 kcal/day |
+
+Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.
+
+
+### 2
+
+Estimated total expenditure: 2020 kcal/day (PAL 1.53)
+
+| Result details | |
+| --- | --- |
+| Revised Harris-Benedict (resting) | 1384 kcal/day |
+| Harris-Benedict × PAL | 2117 kcal/day |
+| Mifflin-St Jeor × PAL | 2020 kcal/day |
+
+Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.
+
+
+### 3
+
+Estimated total expenditure: 3864 kcal/day (PAL 2.25)
+
+| Result details | |
+| --- | --- |
+| Revised Harris-Benedict (resting) | 1847 kcal/day |
+| Harris-Benedict × PAL | 4155 kcal/day |
+| Mifflin-St Jeor × PAL | 3864 kcal/day |
+
+Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.
+

@@ -92,3 +92,46 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Geschätzter Gesamtenergieverbrauch: 3045 kcal/Tag (PAL 1,76)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überarbeitete Harris-Benedict (Ruheumsatz) | 1797 kcal/Tag |
+| Harris-Benedict × PAL | 3162 kcal/Tag |
+| Mifflin-St Jeor × PAL | 3045 kcal/Tag |
+
+Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.
+
+
+### 2
+
+Geschätzter Gesamtenergieverbrauch: 2020 kcal/Tag (PAL 1,53)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überarbeitete Harris-Benedict (Ruheumsatz) | 1384 kcal/Tag |
+| Harris-Benedict × PAL | 2117 kcal/Tag |
+| Mifflin-St Jeor × PAL | 2020 kcal/Tag |
+
+Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.
+
+
+### 3
+
+Geschätzter Gesamtenergieverbrauch: 3864 kcal/Tag (PAL 2,25)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überarbeitete Harris-Benedict (Ruheumsatz) | 1847 kcal/Tag |
+| Harris-Benedict × PAL | 4155 kcal/Tag |
+| Mifflin-St Jeor × PAL | 3864 kcal/Tag |
+
+Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.
+

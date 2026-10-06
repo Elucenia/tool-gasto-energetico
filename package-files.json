@@ -1,6 +1,6 @@
 {
   "id": "gasto-energetico",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5356,
-      "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+      "bytes": 5561,
+      "sha256": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1097,
-      "sha256": "e4e4a5e7064663014e06cba3affba397771dc3337c0ed045e8409d509cb44752"
+      "bytes": 1366,
+      "sha256": "cf2277db0c83577c128ddec49b86454cd40e7a4f76ee16b22da1f353694d2e4a"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4634,
-      "sha256": "0d9e9237e937baffb0a535542b2c4ac2c32cc9e8ef00c0340ef2d9774ac5ff11"
+      "bytes": 6881,
+      "sha256": "63b794f9b1b0524691039977ac0ed75cbfee26e2487202275d71ab361b96477b"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3917,
-      "sha256": "35f88a45d87c5130f5600e731004cf57711628bfba7f03bb516659c2d056694c"
+      "bytes": 5467,
+      "sha256": "192e8e8f1e9ffec642259b699ff0321559f0b419e2656ba4decc8ee8ba0d9c1f"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3495,
-      "sha256": "28aef0881c1ed75aec920d48b5ab054aee1b2f9b8d7b7e5fe1052336a9240454"
+      "bytes": 4895,
+      "sha256": "c254e8074d836613dac010cac55ff49f9a0822165b558b5380564aece68ec5d7"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3749,
-      "sha256": "14f1120742a8b892349418d06d255ceafa9358e307cada911609c54bfc941157"
+      "bytes": 5196,
+      "sha256": "868e4f5a99e806e62c1e5244abe8b82dba21072dfa756f776b3c739da8f6f04c"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3956,
-      "sha256": "21cd127f49434167ff7f4b039a031dbf7c84e5512a724c6cac8e701fd478f861"
+      "bytes": 5617,
+      "sha256": "c393cab16e0f529904fb945667c390b5cf3af1ce684fc5643e33b76b1389fe8b"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6222,
-      "sha256": "d87fd2f0d5c911abdf828a9f46d28de9087f459f4bc7ba2d0930acb2caf7eaf1"
+      "bytes": 9063,
+      "sha256": "b413b6b3873f9a16c6ed64e8e8d73fa75115e0d02bac78ed939116da97a00b37"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3719,
-      "sha256": "327a28187ba614bc7e2bcca935db11b7ba499c35f9eea1d82cde3a8e080add52"
+      "bytes": 5160,
+      "sha256": "02ecb375a5c4ff6b276045f44b5f724f8aebb49001526d81eaebd6720ab34589"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3940,
-      "sha256": "18aa6260b7eb2922cc64d3d6f8df8f53f531b87c5ca4511a45f0ca71771e3c6a"
+      "bytes": 5441,
+      "sha256": "8f1166acb9aefd969a6c2b6f8be7504e58979dd00093b909661162fe885217c6"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3571,
-      "sha256": "0a17bc616f390f3b402f5a999c3817cfe0e8546399c6140dae1777d6f709d98e"
+      "bytes": 4961,
+      "sha256": "c7974eac0433da6ff13082b28908062b527255475a77a53c340bbb7fc79ad039"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3238,
-      "sha256": "8456c65d550046f6833dbf8036d2b09a0698eabf74b2136ac0bdd49c9fdc1cc4"
+      "bytes": 4517,
+      "sha256": "32edffab68fb32cfb8bdade441bd67161ff811b47a86fe94a2cdbc0499569642"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 73052,
+      "sha256": "9ba899893c86e2372d375e6566390a7c28f9bf4cf52be6935909bfa5ea104067"
     },
     {
       "path": "engine/tool-code/gasto-energetico/calculator.js",
-      "bytes": 5356,
-      "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+      "bytes": 5561,
+      "sha256": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2809,
       "sha256": "a23786150071f9d7a94a768b93360207bc8dcf4ec69342d4366ddc0044506aeb"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12078,
+      "sha256": "b77d597cc023592ff52c4d2e4063a552699de9003bdaf70c19606fa1efce5fde"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 49964,
-      "sha256": "c1ee4aee7954169569ac0831d293f095fe56670d9cfd587efe114dd9d38be378"
+      "bytes": 62699,
+      "sha256": "fc01e8968ec2f54c4d474dd8bdc141b70b2dfbafeb61193b839fbe1a7bfc8f2e"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 375,
-      "sha256": "ef651941a20dbc23defa8cdcd10888c6420986926f35a0910baab1a9c543f82d"
+      "bytes": 469,
+      "sha256": "f9b35725761a6e90ad4e99e4296e05cb345c37e15cd49d51c045b50a7d08883c"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12078,
-      "sha256": "b77d597cc023592ff52c4d2e4063a552699de9003bdaf70c19606fa1efce5fde"
+      "bytes": 6363,
+      "sha256": "5edffa27e89cffe02236d23b4b8c66d4f0806e0d749c63d732e08ece8466f199"
     },
     {
       "path": "README.md",
-      "bytes": 3138,
-      "sha256": "3b6e4fc95641189c05ac1ffdd9bcf4cc1af716004a1f4e72f5f559bb4ca0ce1b"
+      "bytes": 3720,
+      "sha256": "e21755ac9a2bca799a7e671fcab145c88f3ebe545334a1a273a9a7525560e802"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 7060,
+      "sha256": "1281d08a286fe13a1be03360d8c69f9d6721c04e750b60eef353ce9e9526bf86"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1840,
       "sha256": "3fea7556b6092940cd04f9d54e59959e0d460c5dd70693107d650416c81633e4"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 15029,
-      "sha256": "e96d1c0955cfaacab5472e47ed623ecb34c2323fa68e8f4e0a1045578123c175"
+      "bytes": 16544,
+      "sha256": "8b5581c5f8db89022ca888b6bcb07509d9bbb2573cf27c0593e8d641dfd5ca7a"
     }
   ]
 }

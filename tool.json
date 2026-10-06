@@ -194,7 +194,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Mifflin St Jeor 1990 e Harris Benedictrevisada Roza Shizgal 1984; PALFAOWHOUNU 2004",
-    "implementationVersion": "gasto-energetico@native-2026-10-03+c09eea23801c",
+    "implementationVersion": "gasto-energetico@native-2026-10-05+e858f905acda",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -329,7 +329,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+      "implementationHash": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gasto-energetico@native-2026-10-03+c09eea23801c",
+          "previousImplementationHash": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91",
+          "implementationHash": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90",
+          "scientificBodySha256": "7f7ed679bafdcbc5b8562a65b7c4bc7ffc5101e8022b0cb750ddc8da9e7a15b5",
+          "metadataContractHash": "24dbaba69f6e82e57888b4cf84e4616742121bf0126042f56ae00894eaf01079",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A equação de Mifflin foi derivada em adultos saudáveis de 19–78 anos, com peso normal e obesidade, utilizando peso em kg, altura em cm e idade em anos. Não equivale a calorimetria individual nem comprova adequação em crianças, gestação ou doença crítica. As outras equações e fatores de atividade devem seguir suas próprias fontes e populações.",
     "sourceLimitEvidence": {
@@ -348,15 +376,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gasto-energetico/calculator.js",
-    "bytes": 5356,
-    "sha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91"
+    "bytes": 5561,
+    "sha256": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90"
   },
-  "sourceToolSha256": "415cf00c78a06f959c72dd3b4ff1d9e4e9ca091510448ed0d2187a84197a88f7",
+  "sourceToolSha256": "813fed012ab77632e4888a5d052206d66a0f7cdf472f99c7c9000d02c3c389eb",
   "omittedFullReferenceBanks": [
     {
       "rows": 750,
       "sha256": "291c48c01d58933e9c51c7bb4be11c9f737103fd1d34d5d7f9edcc6f1b40f529",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

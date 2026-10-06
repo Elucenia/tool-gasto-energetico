@@ -1,0 +1,246 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "gasto-energetico",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "2188c68e801cc540f32241714e88db3b384aaa8f",
+    "oldEngineSha256": "c09eea23801c2c311fa5d1fc9e86128d7e47face71ff37ed44159d70e08bff91",
+    "currentEngineSha256": "e858f905acda1353211021e28fbf729b2063d6e8a07f55cf5d6e5b977fe22d90"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+      "input": {
+        "sexo": "M",
+        "idade": 40,
+        "peso": 80,
+        "altura": 180,
+        "pal": "1.76"
+      },
+      "publicOutput": {
+        "id": "gasto-energetico",
+        "main": [
+          "1.730",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1730,
+          "hb": 1796.862,
+          "tee": 3044.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mifflin": 1730,
+          "hb": 1796.86,
+          "tee": 3044.8
+        },
+        "main": "1.730",
+        "level": "info"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1.730",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "level": "info",
+        "verdict": "Gasto total estimado: 3.045 kcal/dia (PAL 1,76)",
+        "rows": [
+          [
+            "Harris-Benedict revisada (repouso)",
+            "1.797 kcal/dia"
+          ],
+          [
+            "Harris-Benedict × PAL",
+            "3.162 kcal/dia"
+          ],
+          [
+            "Mifflin-St Jeor × PAL",
+            "3.045 kcal/dia"
+          ]
+        ],
+        "note": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+        "raw": {
+          "mifflin": 1730,
+          "hb": 1796.862,
+          "tee": 3044.8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+      "input": {
+        "sexo": "F",
+        "idade": 30,
+        "peso": 60,
+        "altura": 165,
+        "pal": "1.53"
+      },
+      "publicOutput": {
+        "id": "gasto-energetico",
+        "main": [
+          "1.320",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1320.25,
+          "hb": 1383.683,
+          "tee": 2019.9825
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mifflin": 1320.25,
+          "hb": 1383.68,
+          "tee": 2019.98
+        },
+        "main": "1.320"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1.320",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "level": "info",
+        "verdict": "Gasto total estimado: 2.020 kcal/dia (PAL 1,53)",
+        "rows": [
+          [
+            "Harris-Benedict revisada (repouso)",
+            "1.384 kcal/dia"
+          ],
+          [
+            "Harris-Benedict × PAL",
+            "2.117 kcal/dia"
+          ],
+          [
+            "Mifflin-St Jeor × PAL",
+            "2.020 kcal/dia"
+          ]
+        ],
+        "note": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+        "raw": {
+          "mifflin": 1320.25,
+          "hb": 1383.683,
+          "tee": 2019.9825
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+      "input": {
+        "sexo": "M",
+        "idade": 70,
+        "peso": 100,
+        "altura": 170,
+        "pal": "2.25"
+      },
+      "publicOutput": {
+        "id": "gasto-energetico",
+        "main": [
+          "1.718",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "raw": {
+          "mifflin": 1717.5,
+          "hb": 1846.5020000000004,
+          "tee": 3864.375
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mifflin": 1717.5,
+          "tee": 3864.375
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1.718",
+          "kcal/dia"
+        ],
+        "label": "Gasto energético de repouso (Mifflin-St Jeor)",
+        "level": "info",
+        "verdict": "Gasto total estimado: 3.864 kcal/dia (PAL 2,25)",
+        "rows": [
+          [
+            "Harris-Benedict revisada (repouso)",
+            "1.847 kcal/dia"
+          ],
+          [
+            "Harris-Benedict × PAL",
+            "4.155 kcal/dia"
+          ],
+          [
+            "Mifflin-St Jeor × PAL",
+            "3.864 kcal/dia"
+          ]
+        ],
+        "note": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+        "raw": {
+          "mifflin": 1717.5,
+          "hb": 1846.5020000000004,
+          "tee": 3864.375
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

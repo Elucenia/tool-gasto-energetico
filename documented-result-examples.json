@@ -1,0 +1,2088 @@
+{
+  "id": "gasto-energetico",
+  "implementationVersion": "gasto-energetico@native-2026-10-05+e858f905acda",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (repouso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1.797 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3.162 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3.045 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 3.045 kcal/dia (PAL 1,76)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (repouso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1.384 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2.117 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2.020 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 2.020 kcal/dia (PAL 1,53)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (repouso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1.847 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4.155 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3.864 kcal/dia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 3.864 kcal/dia (PAL 2,25)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Equações derivadas em adultos saudáveis: em doentes críticos, obesos graves e idosos frágeis, prefira calorimetria indireta ou as metas por kg das diretrizes.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Revised Harris-Benedict (resting)",
+                "locale": "en",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "en",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "en",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated total expenditure: 3045 kcal/day (PAL 1.76)",
+            "locale": "en",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.",
+            "locale": "en",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Revised Harris-Benedict (resting)",
+                "locale": "en",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "en",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "en",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated total expenditure: 2020 kcal/day (PAL 1.53)",
+            "locale": "en",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.",
+            "locale": "en",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Revised Harris-Benedict (resting)",
+                "locale": "en",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "en",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "en",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/day",
+                "locale": "en",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated total expenditure: 3864 kcal/day (PAL 2.25)",
+            "locale": "en",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "Equations derived in healthy adults: in critically ill patients, severe obesity and frail older adults, prefer indirect calorimetry or the per-kg targets from the guidelines.",
+            "locale": "en",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (reposo)",
+                "locale": "es",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "es",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "es",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 3045 kcal/día (PAL 1,76)",
+            "locale": "es",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.",
+            "locale": "es",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (reposo)",
+                "locale": "es",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "es",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "es",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 2020 kcal/día (PAL 1,53)",
+            "locale": "es",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.",
+            "locale": "es",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict revisada (reposo)",
+                "locale": "es",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "es",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "es",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/día",
+                "locale": "es",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gasto total estimado: 3864 kcal/día (PAL 2,25)",
+            "locale": "es",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "Ecuaciones derivadas en adultos sanos: en pacientes críticos, obesidad grave y adultos mayores frágiles, prefiera la calorimetría indirecta o los objetivos por kg de las guías.",
+            "locale": "es",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict révisée (repos)",
+                "locale": "fr",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "fr",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "fr",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dépense totale estimée : 3045 kcal/jour (PAL 1,76)",
+            "locale": "fr",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.",
+            "locale": "fr",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict révisée (repos)",
+                "locale": "fr",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "fr",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "fr",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dépense totale estimée : 2020 kcal/jour (PAL 1,53)",
+            "locale": "fr",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.",
+            "locale": "fr",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict révisée (repos)",
+                "locale": "fr",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "fr",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "fr",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/jour",
+                "locale": "fr",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dépense totale estimée : 3864 kcal/jour (PAL 2,25)",
+            "locale": "fr",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.",
+            "locale": "fr",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überarbeitete Harris-Benedict (Ruheumsatz)",
+                "locale": "de",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "de",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "de",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätzter Gesamtenergieverbrauch: 3045 kcal/Tag (PAL 1,76)",
+            "locale": "de",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.",
+            "locale": "de",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überarbeitete Harris-Benedict (Ruheumsatz)",
+                "locale": "de",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "de",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "de",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätzter Gesamtenergieverbrauch: 2020 kcal/Tag (PAL 1,53)",
+            "locale": "de",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.",
+            "locale": "de",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überarbeitete Harris-Benedict (Ruheumsatz)",
+                "locale": "de",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "de",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "de",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/Tag",
+                "locale": "de",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätzter Gesamtenergieverbrauch: 3864 kcal/Tag (PAL 2,25)",
+            "locale": "de",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "Bei gesunden Erwachsenen abgeleitete Gleichungen: Bei kritisch Kranken, schwer adipösen und gebrechlichen älteren Erwachsenen indirekte Kalorimetrie oder die kg-Zielwerte der Leitlinien bevorzugen.",
+            "locale": "de",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict rivista (riposo)",
+                "locale": "it",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "it",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "it",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dispendio totale stimato: 3045 kcal/die (PAL 1,76)",
+            "locale": "it",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.",
+            "locale": "it",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict rivista (riposo)",
+                "locale": "it",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "it",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "it",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dispendio totale stimato: 2020 kcal/die (PAL 1,53)",
+            "locale": "it",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.",
+            "locale": "it",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Harris-Benedict rivista (riposo)",
+                "locale": "it",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "it",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "it",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/die",
+                "locale": "it",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dispendio totale stimato: 3864 kcal/die (PAL 2,25)",
+            "locale": "it",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "Equazioni derivate in adulti sani: nei pazienti critici, nell’obesità grave e negli anziani fragili, preferire la calorimetria indiretta o gli obiettivi per kg delle linee guida.",
+            "locale": "it",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "هاريس-بنديكت المنقحة (الراحة)",
+                "locale": "ar",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "١٧٩٧ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "هاريس-بنديكت × PAL",
+                "locale": "ar",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "٣١٦٢ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ميفلين-سانت جيور × PAL",
+                "locale": "ar",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "٣٠٤٥ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "إجمالي الإنفاق المقدر: ٣٠٤٥ kcal/يوم (PAL ١٫٧٦)",
+            "locale": "ar",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "معادلات مشتقة لدى البالغين الأصحاء: في المرضى شديدي الاعتلال، والسمنة الشديدة، وكبار السن الهشين، يُفضَّل استخدام القياس الحراري غير المباشر أو أهداف الكيلوغرام الواردة في الإرشادات.",
+            "locale": "ar",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "هاريس-بنديكت المنقحة (الراحة)",
+                "locale": "ar",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "١٣٨٤ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "هاريس-بنديكت × PAL",
+                "locale": "ar",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "٢١١٧ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ميفلين-سانت جيور × PAL",
+                "locale": "ar",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "٢٠٢٠ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "إجمالي الإنفاق المقدر: ٢٠٢٠ kcal/يوم (PAL ١٫٥٣)",
+            "locale": "ar",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "معادلات مشتقة لدى البالغين الأصحاء: في المرضى شديدي الاعتلال، والسمنة الشديدة، وكبار السن الهشين، يُفضَّل استخدام القياس الحراري غير المباشر أو أهداف الكيلوغرام الواردة في الإرشادات.",
+            "locale": "ar",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "هاريس-بنديكت المنقحة (الراحة)",
+                "locale": "ar",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "١٨٤٧ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "هاريس-بنديكت × PAL",
+                "locale": "ar",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "٤١٥٥ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ميفلين-سانت جيور × PAL",
+                "locale": "ar",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "٣٨٦٤ kcal/يوم",
+                "locale": "ar",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "إجمالي الإنفاق المقدر: ٣٨٦٤ kcal/يوم (PAL ٢٫٢٥)",
+            "locale": "ar",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "معادلات مشتقة لدى البالغين الأصحاء: في المرضى شديدي الاعتلال، والسمنة الشديدة، وكبار السن الهشين، يُفضَّل استخدام القياس الحراري غير المباشر أو أهداف الكيلوغرام الواردة في الإرشادات.",
+            "locale": "ar",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "修订版 Harris-Benedict（静息）",
+                "locale": "zh",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "zh",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "zh",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计总能量消耗：3045 kcal/日（PAL 1.76）",
+            "locale": "zh",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "这些方程源自健康成人：对于危重患者、重度肥胖者和虚弱老年人，优先采用间接测热法或指南中的按 kg 目标。",
+            "locale": "zh",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "修订版 Harris-Benedict（静息）",
+                "locale": "zh",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "zh",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "zh",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计总能量消耗：2020 kcal/日（PAL 1.53）",
+            "locale": "zh",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "这些方程源自健康成人：对于危重患者、重度肥胖者和虚弱老年人，优先采用间接测热法或指南中的按 kg 目标。",
+            "locale": "zh",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "修订版 Harris-Benedict（静息）",
+                "locale": "zh",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "zh",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "zh",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/日",
+                "locale": "zh",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计总能量消耗：3864 kcal/日（PAL 2.25）",
+            "locale": "zh",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "这些方程源自健康成人：对于危重患者、重度肥胖者和虚弱老年人，优先采用间接测热法或指南中的按 kg 目标。",
+            "locale": "zh",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "改訂版 Harris-Benedict（安静時）",
+                "locale": "ja",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "ja",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "ja",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定総エネルギー消費量: 3045 kcal/日（PAL 1.76）",
+            "locale": "ja",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "健常成人から導出された式：重症患者、重度肥満、高齢の虚弱患者では、間接熱量測定またはガイドラインのkg当たり目標を優先する。",
+            "locale": "ja",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "改訂版 Harris-Benedict（安静時）",
+                "locale": "ja",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "ja",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "ja",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定総エネルギー消費量: 2020 kcal/日（PAL 1.53）",
+            "locale": "ja",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "健常成人から導出された式：重症患者、重度肥満、高齢の虚弱患者では、間接熱量測定またはガイドラインのkg当たり目標を優先する。",
+            "locale": "ja",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "改訂版 Harris-Benedict（安静時）",
+                "locale": "ja",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "ja",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "ja",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/日",
+                "locale": "ja",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定総エネルギー消費量: 3864 kcal/日（PAL 2.25）",
+            "locale": "ja",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "健常成人から導出された式：重症患者、重度肥満、高齢の虚弱患者では、間接熱量測定またはガイドラインのkg当たり目標を優先する。",
+            "locale": "ja",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Homem, 40 anos, 80 kg, 180 cm, ativo: Mifflin 1.730 kcal; total 3.045 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संशोधित Harris-Benedict (विश्राम)",
+                "locale": "hi",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1797 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1797
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "hi",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "3162 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3162
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "hi",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3045 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3045
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित कुल व्यय: 3045 kcal/दिन (PAL 1.76)",
+            "locale": "hi",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3045,
+              1.76
+            ]
+          },
+          "note": {
+            "text": "स्वस्थ वयस्कों में प्राप्त समीकरण: गंभीर रूप से बीमार रोगियों, गंभीर मोटापे और नाज़ुक वृद्ध वयस्कों में, अप्रत्यक्ष कैलोरीमिति या दिशानिर्देशों के प्रति kg लक्ष्यों को प्राथमिकता दें।",
+            "locale": "hi",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher, 30 anos, 60 kg, 165 cm, sedentária: Mifflin 1.320 kcal; HB 1.384 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संशोधित Harris-Benedict (विश्राम)",
+                "locale": "hi",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1384 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1384
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "hi",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "2117 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2117
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "hi",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "2020 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  2020
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित कुल व्यय: 2020 kcal/दिन (PAL 1.53)",
+            "locale": "hi",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              2020,
+              1.53
+            ]
+          },
+          "note": {
+            "text": "स्वस्थ वयस्कों में प्राप्त समीकरण: गंभीर रूप से बीमार रोगियों, गंभीर मोटापे और नाज़ुक वृद्ध वयस्कों में, अप्रत्यक्ष कैलोरीमिति या दिशानिर्देशों के प्रति kg लक्ष्यों को प्राथमिकता दें।",
+            "locale": "hi",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem, 70 anos, 100 kg, 170 cm, vigoroso: Mifflin 1.718 kcal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "संशोधित Harris-Benedict (विश्राम)",
+                "locale": "hi",
+                "template": "documented-authored-15d559cdcdbaeec83267"
+              },
+              "value": {
+                "text": "1847 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  1847
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Harris-Benedict × PAL",
+                "locale": "hi",
+                "template": "documented-authored-d66226c61931ce6200cf"
+              },
+              "value": {
+                "text": "4155 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  4155
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mifflin-St Jeor × PAL",
+                "locale": "hi",
+                "template": "documented-authored-ee411cb23da4a4bbfab3"
+              },
+              "value": {
+                "text": "3864 kcal/दिन",
+                "locale": "hi",
+                "template": "documented-authored-9da7ff7f3d5a770155bf",
+                "sourceNumbers": [
+                  3864
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित कुल व्यय: 3864 kcal/दिन (PAL 2.25)",
+            "locale": "hi",
+            "template": "documented-authored-2d4ea4b852e8aad91a31",
+            "sourceNumbers": [
+              3864,
+              2.25
+            ]
+          },
+          "note": {
+            "text": "स्वस्थ वयस्कों में प्राप्त समीकरण: गंभीर रूप से बीमार रोगियों, गंभीर मोटापे और नाज़ुक वृद्ध वयस्कों में, अप्रत्यक्ष कैलोरीमिति या दिशानिर्देशों के प्रति kg लक्ष्यों को प्राथमिकता दें।",
+            "locale": "hi",
+            "template": "documented-authored-52dea1f7b5265ffbfce4"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

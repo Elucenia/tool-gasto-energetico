@@ -92,3 +92,46 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Dépense totale estimée : 3045 kcal/jour (PAL 1,76)
+
+| Détails du résultat | |
+| --- | --- |
+| Harris-Benedict révisée (repos) | 1797 kcal/jour |
+| Harris-Benedict × PAL | 3162 kcal/jour |
+| Mifflin-St Jeor × PAL | 3045 kcal/jour |
+
+Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.
+
+
+### 2
+
+Dépense totale estimée : 2020 kcal/jour (PAL 1,53)
+
+| Détails du résultat | |
+| --- | --- |
+| Harris-Benedict révisée (repos) | 1384 kcal/jour |
+| Harris-Benedict × PAL | 2117 kcal/jour |
+| Mifflin-St Jeor × PAL | 2020 kcal/jour |
+
+Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.
+
+
+### 3
+
+Dépense totale estimée : 3864 kcal/jour (PAL 2,25)
+
+| Détails du résultat | |
+| --- | --- |
+| Harris-Benedict révisée (repos) | 1847 kcal/jour |
+| Harris-Benedict × PAL | 4155 kcal/jour |
+| Mifflin-St Jeor × PAL | 3864 kcal/jour |
+
+Équations dérivées chez des adultes en bonne santé : chez les patients critiques, en cas d’obésité sévère et chez les personnes âgées fragiles, privilégier la calorimétrie indirecte ou les objectifs par kg des recommandations.
+
